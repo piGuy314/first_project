@@ -22,3 +22,16 @@ h1,h2,h3 {
     font-family: 'Open Sans', sans-serif;
     
 }
+
+body, .navbar {
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b4e391+0,61c419+100,b4e391+100 */
+  background: rgb(180,227,145); /* Old browsers */
+  background: -moz-linear-gradient(left, rgba(180,227,145,1) 0%, rgba(97,196,25,1) 100%, rgba(180,227,145,1) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(left, rgba(180,227,145,1) 0%,rgba(97,196,25,1) 100%,rgba(180,227,145,1) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to right, rgba(180,227,145,1) 0%,rgba(97,196,25,1) 100%,rgba(180,227,145,1) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#b4e391', endColorstr='#b4e391',GradientType=1 ); /* IE6-9 */
+}
+
+.navbar{
+  border:none;
+}
