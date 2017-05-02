@@ -23,8 +23,8 @@ h1,h2,h3 {
     
 }
 
-body, .navbar {
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b4e391+0,61c419+100,b4e391+100 */
+.navbar, .home-callout { 
+    // Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#b4e391+0,61c419+100,b4e391+100 //
   background: rgb(180,227,145); /* Old browsers */
   background: -moz-linear-gradient(left, rgba(180,227,145,1) 0%, rgba(97,196,25,1) 100%, rgba(180,227,145,1) 100%); /* FF3.6-15 */
   background: -webkit-linear-gradient(left, rgba(180,227,145,1) 0%,rgba(97,196,25,1) 100%,rgba(180,227,145,1) 100%); /* Chrome10-25,Safari5.1-6 */
@@ -34,4 +34,12 @@ body, .navbar {
 
 .navbar{
   border:none;
+  
 }
+
+.home-callout{
+  margin-top:-20px;
+  padding-top:50px;
+  padding-bottom:100px;
+}
+
