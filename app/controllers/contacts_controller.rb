@@ -14,6 +14,13 @@ class ContactsController < ApplicationController
       redirect_to new_contact_path
     end
   end
+
+=begin
+  def email
+  @contact = Contact.new(contact_params)
+  if @contact.submit
+  end
+=end
   
   private
     def contact_params
