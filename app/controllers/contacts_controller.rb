@@ -9,7 +9,7 @@ class ContactsController < ApplicationController
     if @contact.save
       name = params[:contact][:name]
       email = params[:contact][:email]
-      body = params [:contact][:comments]
+      body = params[:contact][:comments]
       ContactMailer.contact_email(name, email, body).deliver
       flash[:success] = "Message sent."
       redirect_to new_contact_path
@@ -18,13 +18,6 @@ class ContactsController < ApplicationController
       redirect_to new_contact_path
     end
   end
-
-=begin
-  def email
-  @contact = Contact.new(contact_params)
-  if @contact.submit
-  end
-=end
   
   private
     def contact_params
