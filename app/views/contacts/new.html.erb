@@ -4,6 +4,7 @@
     
     <div class = "col-md-4 col-md-offset-4">
       <div class = 'well'>
+<<<<<<< HEAD
         <%= form_for @contact do |f| %>
             <div class = "form-group">
               <%= f.label :name %>
@@ -27,6 +28,26 @@
   </div>
 
  <!-- Non Rails way to complete a form field
+=======
+    <%= form_for @contact do |f| %>
+        <div class = "form-group">
+          <%= f.label :name %>
+          <%= f.text_field :name, class: 'form-control' %>
+        </div>
+        <div class = "form-group">
+          <%= f.label :email %>
+          <%= f.text_field :email, class: 'form-control' %>
+        </div>
+        <div class = "form-group">
+          <%= f.label :comments %>
+          <%= f.text_area :comments, class: 'form-control' %>
+        </div>
+      <%= f.submit 'Submit', class: 'btn btn-default'%>
+      
+    <% end %>
+    
+    <!-- Non Rails way to complete a form field
+>>>>>>> 406e14de0b2e110eb98e503c64dec939fb8ed706
     <form action="">
       <label>Name</label>
       <input type="text">
@@ -39,4 +60,12 @@
       <br>
       <input type="submit">
     </form>
+<<<<<<< HEAD
     -->
+=======
+    -->
+        </div>
+      </div>
+    </div>
+  </div>
+>>>>>>> 406e14de0b2e110eb98e503c64dec939fb8ed706
