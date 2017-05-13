@@ -1,15 +1,15 @@
 class ContactsController < ApplicationController
-<<<<<<< HEAD
+
   
-=======
+
   # GET request to /contact-us
   # Show new contact form
->>>>>>> 531ec77ee58a81470d75239d19179df5ac43f7aa
+
   def new
     @contact = Contact.new    
   end
   
-<<<<<<< HEAD
+
   def create
     @contact = Contact.new(contact_params)
     if @contact.save
@@ -20,7 +20,7 @@ class ContactsController < ApplicationController
       flash[:success] = "Message sent."
       redirect_to new_contact_path
     else
-=======
+
   # POST request /contacts
   def create
     # Mass assignment of form fields into Contact object
@@ -42,18 +42,18 @@ class ContactsController < ApplicationController
       # If Contact object doesn't save
       # store errors in flash hash, 
       # and redirect to the new action
->>>>>>> 531ec77ee58a81470d75239d19179df5ac43f7aa
+
       flash[:danger] = @contact.errors.full_messages.join(", ")
       redirect_to new_contact_path
     end
   end
   
   private
-<<<<<<< HEAD
-=======
+
+
   # To collect data from form, we need to use
   # strong parameters and whitelist the form fields
->>>>>>> 531ec77ee58a81470d75239d19179df5ac43f7aa
+
     def contact_params
       params.require(:contact).permit(:name, :email, :comments)
     end
