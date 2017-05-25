@@ -11,6 +11,8 @@ gem 'sass-rails', '5.0.6'
 gem 'uglifier', '3.0.0'
 # Use CoffeeScript for .coffee assets and views
 gem 'coffee-rails', '4.2.1'
+
+
 # See https://github.com/rails/execjs#readme for more supported runtimes
 # gem 'therubyracer', platforms: :ruby
 
@@ -20,6 +22,7 @@ gem 'jquery-rails', '4.1.1'
 gem 'turbolinks', '5.0.0'
 # Build JSON APIs with ease. Read more: https://github.com/rails/jbuilder
 gem 'jbuilder', '2.5.0'
+
 # Use Redis adapter to run Action Cable in production
 # gem 'redis', '3.0'
 # Use ActiveModel has_secure_password
@@ -55,6 +58,12 @@ group :development do
   # Spring speeds up development by keeping your application running in the background. Read more: https://github.com/rails/spring
   gem 'spring'
   gem 'spring-watcher-listen', '2.0.0'
+  gem 'rails_12factor', '0.0.2'
+  
+    # Use sqlite3 as the database for Active Record
+  gem 'sqlite3'
+  # Call 'byebug' anywhere in the code to stop execution and get a debugger console
+  gem 'byebug', platform: :mri
 end
 
 group :production do
